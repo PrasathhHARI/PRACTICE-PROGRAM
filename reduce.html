@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+    <script>
+     //addd the array
+    // var arr=[1,2,3,4,5,6];
+    // var arr1=arr.reduce((accum,currentv)=>(accum+currentv));
+    // console.log(arr1);
+
+    //2d array combaining
+    // var twod=[[1,2],[3,4],[5,6]]
+    // var twod1=twod.reduce((accum,currentv)=>accum.concat(currentv))
+    //  console.log(twod1);
+
+    // count the color the colo
+    //  var colors=['red','blue','red','green','blue','red','blue','red','green','blue'];
+
+    //  var countcolor=colors.reduce((accum,currentval)=>{
+    //            if(currentval in accum)
+    //            {
+    //             accum[currentval]++;
+                  
+    //            }
+    //            else{
+    //             accum[currentval]=1;
+    //            }
+    //         return accum;
+    //  },[]);
+    //   console.log(countcolor);
+
+    // how many pepole living in chennai
+    //  var peoples=[
+    //     {fname:"hari",age:24,city:"chennai"},
+    //     {fname:"hari",age:20,city:"coimbatore"},
+    //     {fname:"ram",age:25,city:"chennai"}
+    //  ];
+    //  console.log(peoples);
+    //   var countpeoples=peoples.reduce((accum,currentval)=>{
+    //            if(currentval.city in accum)
+    //            {
+    //             accum[currentval.city].push([currentval]);
+                  
+    //            }
+    //            else{
+    //             accum[currentval.city]=[currentval];
+    //            }
+    //         return accum;
+    
+    //         },{});
+    //         console.log(countpeoples);
+    var n=12345;
+    var r,temp=0
+    while(n!=0)
+    {
+        r=n%10
+        temp=temp*10+r
+        n=Math.floor(n/10)
+    }
+    console.log(temp);
+    </script>
+<body>
+    
+</body>
+</html>
+

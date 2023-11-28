@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //     Homework-1
+    //   for (var i = 1; i <= 5; i++) {
+    //     for (var j = 5; j >= i; j--) {
+    //       document.write(" " + i + j);
+    //     }
+    //     document.write("<br>");
+    //   }
+      //     o|p
+      //     15 14 13 12 11
+      //     25 24 23 22
+      //     35 34 33
+      //     45 44
+      //     55
+
+      //    Homework-2
+      //     for(var i=1;i<=5;i++)
+      //     {
+      //         for(var j=1;j<=i;j++)
+      //         {
+      //             document.write(" "+i);
+      //         }
+      //         document.write("<br>");
+      //     }
+      //     o|p
+      //     1
+      //     2 2
+      //     3 3 3
+      //     4 4 4 4
+      //     5 5 5 5 5
+
+      //     Homework-3
+      //     for(var i=5;i>=1;i--)
+      //     {
+      //         for(var j=5;j>=i;j--)
+      //         {
+      //             document.write(" ",+i);
+      //         }
+      //         document.write("<br>");
+      //     }
+      //     O|P
+      //     5
+      //     4 4
+      //     3 3 3
+      //     2 2 2 2
+      //     1 1 1 1 1
+
+      //     Homework-4
+      //     for(var i=1;i<=5;i++)
+      //     {
+      //         for( var j=5;j>=i;j--)
+      //         {
+      //             document.write(" "+j);
+      //         }
+      //         document.write("<br>");
+      //     }
+      //     O|P
+      //     5 4 3 2 1
+      //     5 4 3 2
+      //     5 4 3
+      //     5 4
+      //     5
+      //     Homework-5
+      //     var n=1;
+      //     for( var i=0;i<5;i++)
+      //     {
+      //         for(var j=0;j<=i;j++)
+      //         {
+      //             document.write(" ",+n)
+      //             n++;
+      //         }
+      //         document.write("<br>");
+      //         n-=i;
+      //     }
+      //     o|P
+      //     1
+      //     2 3
+      //     3 4 5
+      //     4 5 6 7
+      //     5 6 7 8 9
+      //     homework-6
+
+      //     for(var i=0;i<5;i++)
+      //     {
+      //         for(var j=0;j<=i;j++)
+      //         {
+      //             if((i+j)%2==0)
+      //             {
+      //                 document.write("0");
+      //             }
+      //             else{
+      //                 document.write("1");
+      //             }
+      //         }
+      //         document.write("<br>");
+
+      //     }
+      //     o|p
+      //     0
+      //     10
+      //     010
+      //     1010
+      //     01010
+
+      //     homework-7
+      //     function show()
+      //     {
+      //        var a=document.getElementById("t1").value;
+      //        var len=a.length;
+      //     for(var i=len;i>=1;i--)
+      //     {
+      //        for(var j=0;j<i;j++)
+      //        {
+      //           document.write(a.charAt(j));
+      //        }
+      //        document.write("<br>");
+      //     }
+      //   }
+      // o|p
+      // abcdefgh
+      // abcdefg
+      // abcdef
+      // abcde
+      // abcd
+      // abc
+      // ab
+      // a
+      // function show()
+      // {
+      //     var a=document.getElementById("t1").value;
+      //     var len=a.length;
+      //     for(var i=0;i<len;i++)
+      //     {
+      //         for(var j=0;j<=i;j++)
+      //         {
+      //             document.write(a.charAt(j));
+      //         }
+      //         document.write("<br>");
+      //     }
+      // }
+      // O|P
+      // v
+      // vi
+      // vim
+      // vima
+      // vimal
+      // vimala
+      // vimalan
+
+      // var a=prompt("enter the number:");
+      // var b=prompt("enter the number:");
+      // for(var i=0;i<a;i++)
+      // {
+      //     for(var j=0;j<b;j++)
+      //     {
+      //         // if((i==1&&j==1)||(i==1&&j==2)||(i==1&&j==3)
+      //         // ||(i==1&&j==4)||(i==2&&j==1)||
+      //         // (i==2&&j==2)||(i==2&&j==3)||(i==2&&j==4))
+      //         // document.write("&nbsp;"+" ");
+      //         // else
+      //         // document.write("*"+" ")
+      //         if(i==0||i==a-1||j==0||j==b-1)
+      //         {
+      //             document.write("* ");
+      //         }
+      //         else{
+      //             document.write("&nbsp;"+"&nbsp;"+"&nbsp;");
+      //         }
+      //     }
+      //     document.write("<br>");
+      // }
+      // o/p
+      // ******
+      // *    *
+      // *    *
+      // ******
+
+      // for(var i=0;i<4;i++)
+      // {
+      //     for(var j=4;j>i;j--)
+      //     {
+      //          document.write("&nbsp;"+"&nbsp;");
+
+      //     }
+      //     for(j=0;j<4;j++)
+      //     {
+      //         document.write("*");
+      //     }
+      //     document.write("<br>");
+      // }
+      // o/p
+      //     ****
+      //    ****
+      //   ****
+      //  ****
+      // var k=prompt("enter the row");
+      // for(var i=1;i<=k;i++)
+      // {
+      //     for(var j=0;j<i;j++)
+      //     {
+      //         document.write("&nbsp;"+"&nbsp;");
+      //     }
+      //     for(j=0;j<k;j++)
+      //     {
+      //         document.write("*");
+      //     }
+      //     document.write("<br>");
+      // }
+      // o\p
+      // ****
+      //  ****
+      //   ****
+      //    ****
+
+      // for(var i=0;i<4;i++)
+      // {
+      //     for(var j=4;j>i+1;j--)
+      //     {
+      //         document.write("&nbsp;"+"&nbsp;")
+      //     }
+      //     for(var j=0;j<=i*2;j++)
+      //     {
+      //         document.write("+");
+      //     }
+
+      //     document.write("<br>")
+      // }
+      // o/p
+      //        *
+      //       ***
+      //      *****
+      //     *******
+      //    *********
+      // var k=prompt("enter the number:");
+      // for(var i=0;i<k;i++)
+      // {
+      //     for(var j=0;j<i;j++)
+      //     {
+      //         document.write("&nbsp;"+"&nbsp;");
+      //     }
+      //     for(j=k*2-1;j>i*2;j--)
+      //     {
+      //         // if((i==0)||(i==1&&j==k*2-1)||(i==1&&j==k*2-3))
+      //         document.write("*");
+      //     }
+      //     document.write("<br>");
+      // }
+      // o/p
+      // *********
+      //  *******
+      //   *****
+      //    ***
+      //     *
+
+      // var k=prompt("enter");
+      // for(var i=0;i<k;i++)
+      // {
+      //     for(var j=k;j>i+1;j--)
+      //     {
+      //         document.write("&nbsp;"+"&nbsp;");
+      //     }
+      //     for(j=0;j<=i*2;j++)
+      //     {
+      //         if(i==k-1)
+      //         {
+      //         document.write("*");
+      //         }
+      //         else
+      //         {
+      //             if(j==0 || j>=i*2)
+      //             {
+      //                 document.write("*");
+      //             }
+      //             else{
+      //                 document.write("&nbsp;"+"&nbsp;");
+      //             }
+      //         }
+      //     }
+      //     document.write("<br>");
+      // }
+      //        *
+      //     *     *
+      //   *         *
+      // * * *  *  * * *
+
+    //   function show() {
+      
+//       var num;
+//       for (var i = 1; i <= 5; i++) {
+//         // Print leading spaces
+//         for (var space = 1; space <= 5 - i; space++) {
+//           document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+//         }
+//         num = i;
+//         if (num > 3 && num % 2 == 0) {
+//           num = i + 2;
+//         } else if (num > 3 && num % 2 != 0) {
+//           num = i + num - 1;
+//         }
+
+//         // Print numbers in the pattern
+//         for (var j = 1; j <= i; j++) {
+//           document.write(num+"&nbsp");
+//           num += 2;
+//         }
+//         document.write("<br />");
+//       }
+//     }
+//           1 
+//         2 4 
+//       3 5 7 
+//    6 8 10 12 
+// 9 11 13 15 17 
+    </script>
+  </head>
+  <style></style>
+  <body>
+    <!-- <input type="text" id="t1" />
+    <button onclick="show()">click</button> -->
+  </body>
+</html>

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+//     for(var i=1;i<=5;i++)
+//     {
+//         for(var j=1;j<=9;j++)
+//         {
+//             document.write(i,j+" ");
+//         }
+//         document.write("<br>");
+//     }
+// 11 12 13 14 15 16 17 18 19
+// 21 22 23 24 25 26 27 28 29
+// 31 32 33 34 35 36 37 38 39
+// 41 42 43 44 45 46 47 48 49
+// 51 52 53 54 55 56 57 58 59
+
+// var k=5;
+// for(var i=1;i<=5;i++)
+// { 
+//     for(var j=1;j<=k*2/2;j++)
+//     {
+//         if(i+j>5)
+//         document.write(i,j+" ");
+//         else
+//         document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+//     }
+//     k++
+//     document.write("<br>");
+// }
+
+//              15
+//           24 25 26
+//        33 34 35 36 37
+//     42 43 44 45 46 47 48
+//  51 52 53 54 55 56 57 58 59
+
+    // var k=9;
+    // for(var i=5;i>=1;i--)
+    // {
+
+    //     for(var j=1;j<=k*2/2;j++)
+    //     {
+    //         if(i+j>5)
+    //         document.write(i,j+" ")
+    //         else
+    //         document.write("&nbsp;&nbsp;&nbsp;&nbsp; ");
+    //     }
+    //     k--;
+    //     document.write("<br>");
+    // }
+    // 51 52 53 54 55 56 57 58 59
+    //    42 43 44 45 46 47 48
+    //       33 34 35 36 37
+    //          24 25 26
+    //             15
+
+//     for(var i=1;i<=5;i++)
+//     {
+//         for(var j=5;j>=1;j--)
+//         {
+//             document.write(i,j+" ")
+//         }
+//         document.write("<br>")
+//     }
+// 15 14 13 12 11
+// 25 24 23 22 21
+// 35 34 33 32 31
+// 45 44 43 42 41
+// 55 54 53 52 51
+
+// for(var i=1;i<=5;i++)
+//     {
+//         for(var j=1;j<=5;j++)
+//         {
+//             document.write(i,j+" ")
+//         }
+//         document.write("<br>")
+//     }
+// 11 12 13 14 15
+// 21 22 23 24 25
+// 31 32 33 34 35
+// 41 42 43 44 45
+// 51 52 53 54 55
+
+// for(var i=5;i>=1;i--)
+// {
+//     for(var j=5;j>=1;j--)
+//     {
+//         document.write(i,j+" ");
+//     }
+//     document.write("<br>")
+// }
+// 55 54 53 52 51
+// 45 44 43 42 41
+// 35 34 33 32 31
+// 25 24 23 22 21
+// 15 14 13 12 11
+
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=1;j<=i;j++)
+//     {
+//         document.write(i,j+" ");
+//     }
+//     document.write('<br>')
+// }
+// 11
+// 21 22
+// 31 32 33
+// 41 42 43 44
+// 51 52 53 54 55
+
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=1;j<=i;j++)
+//     {
+//         document.write("*");
+//     }
+//     document.write("<br>")
+// }
+// *
+// **
+// ***
+// ****
+// *****
+// var k=5
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=1;j<=k;j++)
+//     {
+//         document.write(i,j+' ');
+//     }
+//     k--;
+//     document.write("<br>");
+// }
+// 11 12 13 14 15
+// 21 22 23 24
+// 31 32 33
+// 41 42
+// 51
+
+// var k=5
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=1;j<=k;j++)
+//     {
+//         document.write('*');
+//     }
+//     k--;
+//     document.write("<br>");
+// }
+// *****
+// ****
+// ***
+// **
+// *
+
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=1;j<=i;j++)
+//     {
+//         document.write(i+" ");
+//     }
+//     document.write('<br>')
+// }
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+// 5 5 5 5 5
+
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=1;j<=i;j++)
+//     {
+//         document.write(j+' ');
+//     }
+//     document.write('<br>')
+// }
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+// for(var i=1;i<=20;i++)
+// {
+//     document.write(i+" "+"X"+" "+8+"="+i*8);
+//     document.write("<br>")
+// }
+// 1 X 8=8
+// 2 X 8=16
+// 3 X 8=24
+// 4 X 8=32
+// 5 X 8=40
+
+// var k=1
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=1;j<=i;j++)
+//     {
+//         document.write(k+" ");
+//         k++;
+//     }
+//     document.write("<br>");
+// }
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+// 11 12 13 14 15
+
+// var k=1
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=1;j<=i;j++)
+//     {
+//        document.write(i+j-1);
+//        k++;
+//     }
+
+//     document.write("<br>")
+// }
+
+// 1
+// 23
+// 345
+// 4567
+// 56789
+
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=1;j<=i;j++)
+//     {
+//         sum=i+j;
+//         if(sum%2==0)
+//         document.write(1+" ");
+//         else
+//         document.write(0+" ");   
+//     }
+//     document.write("<br>");
+// }
+// 1
+// 0 1
+// 1 0 1
+// 0 1 0 1
+// 1 0 1 0 1
+
+// var fname="GOWTHAM";
+// var len=fname.length;
+// for(var i=1;i<=len;i++)
+// {
+//     for(var j=0;j<i;j++)
+//     {
+//         document.write(fname.charAt(j)+" ");
+//     }
+//     document.write("<br>")
+// }
+// G
+// G O
+// G O W
+// G O W T
+// G O W T H
+// G O W T H A
+// G O W T H A M
+// for(var i=1;i<=5;i++)
+// {
+//     for(var j=i;j<=5;j++)
+//     {
+//        document.write(j);
+//     }
+//     document.write('<br>')
+//     for(var k=1;k<=i;k++)*
+//     {
+//         document.write("&nbsp;&nbsp;")
+//     }
+// }
+// 12345
+//  2345
+//   345
+//    45
+//     5
+
+
+// var l=1;
+// for(var i=5;i>=1;i--)
+// {
+//     for(var j=i;j>=1;j--)
+//     {
+//         document.write(i)
+//     }
+//     document.write("<br>");
+//     for(var k=1;k<=l;k++)
+//     {
+//         document.write("&nbsp;&nbsp;")
+//     }
+//     l++;
+// }
+// 55555
+//  4444
+//   333
+//    22
+//     1
+
+// var l=1
+// for(var i=5;i>=1;i--)
+// {
+//     for(var j=i;j>=1;j--)
+//     {
+//         document.write("*")
+//     }
+//     document.write("<br>")
+//     for(var k=1;k<=l;k++)
+//     {
+//      document.write("&nbsp;")
+//     }
+//     l++;
+// }
+// * * * * *
+//  * * * *
+//   * * *
+//    * *
+//     *
+// var l=1;
+// for(var i=5;i>=1;i--)
+// {
+//     for(var j=i;j>=1;j--)
+//     {
+//         document.write(j)
+//     }
+//     document.write("<br>");
+//     for(var k=1;k<=l;k++)
+//     {
+//         document.write("&nbsp;&nbsp;");
+//     }
+//     l++;
+// }
+// 54321
+//  4321
+//   321
+//    21
+//     1
+
+// var s=1
+// for(var i=5;i>=1;i--)
+// {
+//     var l=1;
+//     for(var j=i;j>=1;j--)
+//     {
+//         document.write(l)
+//         l++;
+//     }
+//     document.write("<br>");
+//     for(var k=1;k<=s;k++)
+//     {
+//         document.write("&nbsp;&nbsp;")
+//     }
+//     s++;
+// }
+// 12345
+//  1234
+//   123
+//    12
+//     1
+
+// var l=1;
+// for(var i=5;i>=1;i--)
+// {
+//     var s=5;
+//     for(var j=i;j>=1;j--)
+//     {
+//         document.write(s)
+//         s--;
+//     }
+//     document.write("<br>")
+//     for(var k=1;k<=l;k++)
+//     {
+//         document.write("&nbsp;&nbsp;")
+//     }
+//     l++;
+// }
+// 54321
+//  5432
+//   543
+//    54
+//     5
+var l=5;  
+for(var i=1;i<=5;i++)
+{
+    for(var k=1;k<=l;k++)
+    {
+        document.write("&nbsp;&nbsp;")
+    }
+    l--;
+    for(var j=1;j<=i;j++)
+    {
+        document.write("*"+"&nbsp;&nbsp;");
+    }
+    document.write("<br>")
+ }
+//           *
+//         *  *
+//       *  *   *
+//     *  *   *   *
+//   *   *  *   *   *
+// var l=5
+// for(var i=5;i>=1;i--)
+// { 
+//     for(var k=1;k<=l;k++)
+//     {
+//         document.write("&nbsp;&nbsp;")
+//     }
+//     l--;
+//     for(var j=5;j>=i;j--)
+//     {
+//        document.write(j);
+//     }
+//     document.write("<br>");
+    
+// }
+//       5 
+//      54
+//     543
+//    5432
+//   54321
+
+// for(var i=5;i>=1;i--)
+// {
+//     for(var l=1;l<=i;l++)
+//     {
+//         document.write("&nbsp;&nbsp;")
+//     }
+//     var k=i;
+//     for(var j=5;j>=i;j--)
+//     {  
+//         document.write(k)
+//         k++
+//     }
+//     document.write("<br>");
+// }
+//       5
+//      45
+//     345
+//    2345
+//   12345
+
+// for(var i=5;i>=1;i--)
+// {
+//     for(var l=1;l<=i;l++)
+//     {
+//         document.write("&nbsp;&nbsp;")
+//     }
+//     var k=1;
+//     for(var j=5;j>=i;j--)
+//     {  
+//         document.write(k)
+//         k++
+//     }
+    
+//     document.write("<br>");
+// }
+//       1
+//      12
+//     123
+//    1234
+//   12345
+
+// var s=5
+// for(var i=1;i<=5;i++)
+// {
+//     for(var l=1;l<=s;l++)
+//     {
+//         document.write("&nbsp;&nbsp;")
+//     }
+//     var k=i;    
+//     for(var j=1;j<=i;j++)
+//     {
+//         document.write(k)
+//          k--
+//     }
+//     s--
+//     document.write("<br>")
+// }
+//       1
+//      21
+//     321
+//    4321
+//   54321
+
+
+// *
+//  *
+//   *
+//    * 
+//     * 
+
+// for(var i=1;i<=5;i++)
+// {
+    
+//     for(var j=1;j<=5;j++)
+//     {
+//         if(i+j==6)
+//         {
+//             document.write("*")
+//         }
+//         else{
+//          document.write("&nbsp;&nbsp;")    
+//         }
+//     }
+//     document.write("<br>")
+// }
+//           *
+//         *
+//       *
+//     *
+//   *
+
+for(var i=1;i<=5;i++)
+{
+    for(var j=1;j<=5;j++)
+    {
+        if(i==j || i+j==6)
+        {
+            document.write("*");
+        }
+        else{
+            document.write("&nbsp;&nbsp;&nbsp;")
+        }
+    }
+    document.write("<br>")
+}
+// print 1 to 100
+// for(var i=1;i<=100;i++)
+// {
+//     document.write(i);
+//     document.write('<br>')
+// }
+
+// var i=100;
+// while(i!=0)
+// {
+//     document.write(i)
+//     i--;
+//     document.write("<br>")
+// }
+
+// sum 1+2+3+4+5....+20=55
+// var i=1;
+// var sum=0;
+// while(i<=50)
+// {
+    // if(i==50)
+    // {
+    //     document.write(i+"=");
+    // }
+    // else{
+
+    //     document.write(i+"+");
+    // }
+    // sum=sum+i;
+    // i++
+
+    // sum even number
+    // if(i%2==0)
+    // {
+    //     if(i==50)
+    //     {
+    //         document.write(i+'=')
+    //     }
+    //     else
+    //     document.write(i+"+")
+    //     sum=sum+i; 
+    // }
+    // i++
+
+    // sum of ODD number
+    // if(i%2!=0)
+    // {
+    //     if(i==49)
+    //     {
+    //         document.write(i+'=')
+    //     }
+    //     else
+    //     document.write(i+"+")
+    //     sum=sum+i; 
+    // }
+    // i++
+
+// }
+// document.write(sum);
+
+// var d=1234;
+// var len=d.toString().length;
+// document.write(len)
+// var sum=0,mod;
+// while(d!=0)
+// {
+//     // mod=d%10;
+//     // sum=sum+mod;
+//     // d=parseInt(d/10);
+    
+//     mod=d%10;
+    
+//     // sum of even number in digit
+//     // if(mod%2==0)
+//     // sum=sum+mod;
+
+//     // sum of Odd number in digit
+//     if(mod%2!=0)
+//     {
+//     document.write(mod+"+")
+//     sum=sum+mod;
+//      }
+//     d=parseInt(d/10);
+// }
+
+// document.write("<br>");
+// document.write("Sum of the digit:"+ sum);
+
+// Reverse the number
+// var i=784;
+// var sum=0;
+// while(i!=0)
+// {
+//     mod=i%10;
+//     sum=sum*10+mod;
+//     i=parseInt(i/10);
+// }
+// document.write(sum);
+
+// for(var i=1;i<=100;i++)
+// {
+//     if(i<50 || i>60)
+//     document.write(i)
+// }
+
+var num="ram";
+// var n=num.reverse;
+// var n=num.split("").reverse().join("");
+document.write(n);
+
+
+// function reverseString(str)
+// {
+//     console.log(str.reverse()) ;
+// }
+// console.log(reverseString(num));
+// var a=prompt("Enter the number1:");
+// var b=prompt("Enter the number2:");
+
+// for(var i=a;i<=b;i++)
+// {
+//    document.write(i);
+// }
+
+// var fname=prompt("enter the name");
+// var len = fname.length;
+// var n=fname.split("").reverse().join("");
+// document.write(n);
+// for(var i=0;i<len;i++)
+// {
+//     if(fname.charAt(i)=='A'||fname.charAt(i)=='E'||fname.charAt(i)=='I'||fname.charAt(i)=='O'||fname.charAt(i)=='U'||fname.charAt(i)=='a'||fname.charAt(i)=='e'||fname.charAt(i)=='i'||fname.charAt(i)=='o'||fname.charAt(i)=='u')
+//     {
+//         document.write(fname.charAt(i));
+//     }
+
+// }
+
+// var fname=prompt("enter the name:");
+// var len=fname.length;
+// for(var i=len;i>=0;i--)
+// {
+//     document.write(fname.charAt(i))
+// }
+
+// var fname=prompt("enter the name");
+// var len = fname.length;
+// for(var i=0;i<len;i++)
+// {
+//     if((fname.charAt(i)>='A' && fname.charAt(i)<='Z')||(fname.charAt(i)>='a' && fname.charAt(i)<='z' ))
+//     {
+//         document.write(fname.charAt(i));
+//     }
+// }
+// var arr=[-11,33,44,-2,5555,666,1];
+
+// var len=arr.length;
+// document.write(len);
+// document.write("<br>")
+// var max=0,pos=" ",neg=" ";
+// for(var i=0;i<len;i++)
+// {
+//    for(var j=i+1;j<=len;j++)
+//    {
+//       if(arr[i]>arr[j])
+//       {
+//         max=arr[i]
+//         arr[i]=arr[j]
+//         arr[j]=max
+//       }
+
+//    }
+//    if(arr[i]>=0)
+//    {
+//     pos=pos+arr[i]+" "
+//    }
+//    else{
+//     neg=neg+arr[i]+' '
+//    }
+
+// }
+// for(var i=0;i<len;i++)
+// {
+//         document.write(arr[i]+' ')
+//     }
+    
+//     document.write("second smallest :"+arr[1])
+// //     document.write("<br>")
+
+//     document.write("second largest :"+arr[len-2])
+//     document.write("<br>")
+
+//     document.write("negative number:"+neg)
+//     document.write("<br>")
+
+// document.write("positive number:"+pos)
+
+// var wor="i             am         so   good"
+// document.write(wor.length);
+// var a=wor.split(" ")
+// document.write(a);
+// document.write(a.length);
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    // toUpperCase using in map()
+   var arr=["html","javascript"];
+   var arr1=arr.map(word=>word.toUpperCase());
+    console.log(arr1);
+
+    // double the num
+    var num=[1,2,3,4,5]
+    var num2=num.map(num=>num*2);
+    console.log(num2)
+
+    // combining  array
+    var fruits=["apple","banana"];
+    var colours=["red","yellow"];
+    var newarr=fruits.map((value,index)=>value+"-"+colours[index]);
+    console.log(newarr);
+
+   //modify array
+   var obj=[
+    {name:"hari",age:20},
+    {name:"vimalan",age:30},
+    {name:"kanni",age:40}
+   ];
+   console.log(obj);
+   var obj1=obj.map(user=>user.name+":"+user.age);
+   console.log(obj1);
+   //modify
+     var obj2=obj.map(user=>{
+        return{
+            name:user.name,
+            age:user.age+1
+        }
+     });
+     console.log(obj2);
+ // multiple parameter
+    obj4=["car","bus","van"];
+    var obj3=obj4.map(function(element,index,array)
+    {
+        return {
+            name:element,
+            elementlen:element.length,
+            position:index,
+            lenght:array.length
+        }
+    })
+    console.log(obj3);
+
+</script>
+<body>
+    
+</body>
+</html>
